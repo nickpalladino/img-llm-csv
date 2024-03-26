@@ -32,13 +32,6 @@ export default {
       parseCSVData(props.csvFile);
     });
 
-    const fetchCSVData = async () => {
-      const response = await fetch('/test.csv');
-      const text = await response.text();
-      console.log(text);
-      parseCSVData(text);
-    };
-
     const parseCSVData = (csvText) => {
       Papa.parse(csvText, {
         header: true,
