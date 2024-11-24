@@ -95,8 +95,8 @@ export default defineComponent({
         // need to specify proxy url
         const requestBody = {
           model: 'claude-3-opus-20240229',
-          max_tokens: 1024,
-          //temperature: 0.2,
+          max_tokens: 2472,
+          temperature: 0.5,
           messages: [
             {
               role: 'user',
@@ -124,6 +124,7 @@ export default defineComponent({
             'Content-Type': 'application/json',
             'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
             'anthropic-version': '2023-06-01',
+            'anthropic-dangerous-direct-browser-access': 'true',
             origin: 'http://localhost:3000'
           },
           body: JSON.stringify(requestBody)
