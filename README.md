@@ -4,6 +4,7 @@ Spreadsheet Image to CSV converter using the Anthropic Claude3 Opus large langua
 
 ![Screenshot 2024-11-23 at 11 31 58 PM](https://github.com/user-attachments/assets/52c77229-d0fe-4a64-8909-1a4a91ba59c8)
 
+Need to add a .env file with a key `VITE_ANTHROPIC_API_KEY=<your anthropic api key>`
 
 ## Project Setup
 
